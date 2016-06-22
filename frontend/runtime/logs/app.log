@@ -1,0 +1,128 @@
+2016-06-22 05:40:25 [127.0.0.1][2][p1uf1rikougc79otoehhs2ir27][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/goodslist in /usr/local/www/advanced/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /usr/local/www/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('goodslist', Array)
+#1 /usr/local/www/advanced/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/goodslist', Array)
+#2 /usr/local/www/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /usr/local/www/advanced/frontend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /usr/local/www/advanced/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /usr/local/www/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /usr/local/www/advanced/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-06-22 05:40:25 [127.0.0.1][2][p1uf1rikougc79otoehhs2ir27][info][application] $_GET = [
+    'r' => 'site/goodslist'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'p1uf1rikougc79otoehhs2ir27'
+    '_identity' => '79d3d70bbfa076aba15c82cf39cbb48f96ba2489f356c2290048417926a43a16a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wloWA5Ky_dh5Bg68uwpkHyoGwBlE-K4n\",2592000]\";}'
+    '_csrf' => '43a952a397a25f8c4db71dbb143acc4955e1ac11b2323a2f507a2bcf7012ee71a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lyvTrhIb_dqkE-M8yiH7wInuTW1pDp2i\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'chl'
+    'HOME' => '/home/chl'
+    'HTTP_COOKIE' => 'PHPSESSID=p1uf1rikougc79otoehhs2ir27; _identity=79d3d70bbfa076aba15c82cf39cbb48f96ba2489f356c2290048417926a43a16a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wloWA5Ky_dh5Bg68uwpkHyoGwBlE-K4n%22%2C2592000%5D%22%3B%7D; _csrf=43a952a397a25f8c4db71dbb143acc4955e1ac11b2323a2f507a2bcf7012ee71a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lyvTrhIb_dqkE-M8yiH7wInuTW1pDp2i%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'yii2.advanced'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'yii2.advanced'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58768'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/usr/local/www/advanced'
+    'DOCUMENT_URI' => '/frontend/web/index.php'
+    'REQUEST_URI' => '/frontend/web/index.php?r=site/goodslist'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/goodslist'
+    'SCRIPT_FILENAME' => '/usr/local/www/advanced/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466574025.388
+    'REQUEST_TIME' => 1466574025
+]
+2016-06-22 05:41:51 [127.0.0.1][2][p1uf1rikougc79otoehhs2ir27][error][yii\base\ErrorException:2] yii\base\ErrorException: Missing argument 1 for yii\db\BaseActiveRecord::findAll(), called in /usr/local/www/advanced/frontend/controllers/GoodsController.php on line 16 and defined in /usr/local/www/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php:109
+Stack trace:
+#0 /usr/local/www/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(109): yii\base\ErrorHandler->handleError(2, 'Missing argumen...', '/usr/local/www/...', 109, Array)
+#1 /usr/local/www/advanced/frontend/controllers/GoodsController.php(16): yii\db\BaseActiveRecord::findAll()
+#2 [internal function]: frontend\controllers\GoodsController->actionList()
+#3 /usr/local/www/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /usr/local/www/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /usr/local/www/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('list', Array)
+#6 /usr/local/www/advanced/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('goods/list', Array)
+#7 /usr/local/www/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /usr/local/www/advanced/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-06-22 05:41:51 [127.0.0.1][2][p1uf1rikougc79otoehhs2ir27][info][application] $_GET = [
+    'r' => 'goods/list'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'p1uf1rikougc79otoehhs2ir27'
+    '_identity' => '79d3d70bbfa076aba15c82cf39cbb48f96ba2489f356c2290048417926a43a16a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wloWA5Ky_dh5Bg68uwpkHyoGwBlE-K4n\",2592000]\";}'
+    '_csrf' => '43a952a397a25f8c4db71dbb143acc4955e1ac11b2323a2f507a2bcf7012ee71a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lyvTrhIb_dqkE-M8yiH7wInuTW1pDp2i\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'chl'
+    'HOME' => '/home/chl'
+    'HTTP_COOKIE' => 'PHPSESSID=p1uf1rikougc79otoehhs2ir27; _identity=79d3d70bbfa076aba15c82cf39cbb48f96ba2489f356c2290048417926a43a16a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wloWA5Ky_dh5Bg68uwpkHyoGwBlE-K4n%22%2C2592000%5D%22%3B%7D; _csrf=43a952a397a25f8c4db71dbb143acc4955e1ac11b2323a2f507a2bcf7012ee71a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lyvTrhIb_dqkE-M8yiH7wInuTW1pDp2i%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'yii2.advanced'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'yii2.advanced'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58774'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/usr/local/www/advanced'
+    'DOCUMENT_URI' => '/frontend/web/index.php'
+    'REQUEST_URI' => '/frontend/web/index.php?r=goods/list'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods/list'
+    'SCRIPT_FILENAME' => '/usr/local/www/advanced/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466574111.2996
+    'REQUEST_TIME' => 1466574111
+]
